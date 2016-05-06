@@ -14,6 +14,9 @@ int string_len(char *s)
      return (l);
 }
 
+/* reverse a string
+ * works for any string of size 0 to INT_MAX - 1
+ */
 void crazy_reverse_string(char *s)
 {
      int l;
@@ -34,7 +37,7 @@ int main(void)
 {
      char *s;
 
-     s = strdup("Hello Holberton! \\o/ #cisfun");
+     s = strdup("Hello Holberton! \\o/ #cisfun"); /* This is an example, but it should work for any string */
      printf("Before: %s\n", s);
      crazy_reverse_string(s);
      printf("After: %s\n", s);
